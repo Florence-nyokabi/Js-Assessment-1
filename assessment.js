@@ -23,7 +23,7 @@ function searchTarget(num){
     else if(last < first){
         emptyArray =+
         console.log(emptyArray);
-        
+
     }
 }
 
@@ -45,7 +45,7 @@ console.log(isLeapYear(2004));
 
 // Question 4
 function fizzBuzz(){
-    for( let i = 0, i <= 100, i++){
+    for( let i = 0; i <= 100; i++){
         if (i % 5 === 0 && i % 3 === 0){
             console.log("FizzBuzz");
         }
@@ -80,10 +80,3 @@ function numbers(nums){
         return i.toNumber();
     }
 }
-
-
-
-
-
-
-
