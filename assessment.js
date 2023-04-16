@@ -16,14 +16,14 @@ console.log(reverseString(food));
 // null
 // let num = [2,8,0,23,5,45,76]
 // Target = 23
-function divideArray(arr){
-    if(arr.length <= 1){
-        return arr;
+function divideArray(num){
+    if(num.length <= 1){
+        return num;
     }
-    let middle = Math.floor(arr.length / 2);
-    let left = arr.slice(0, middle);
-    let right = arr.slice(middle);
-    return sortArray(binary(divideArray(left), divideArray(right)));
+    let middle = Math.floor(num.length / 2);
+    let left = num.slice(0, middle);
+    let right = num.slice(middle);
+    return sortArray(divideArray(left), divideArray(right));
 }
 
 function sortArray(left, right){
@@ -38,8 +38,6 @@ function sortArray(left, right){
     }
     return [...empty,...left,...right];
 }
-let arr = [2,8,0,23,5,45,76];
-console.log(divideArray(arr));
 
 function binary(num, target){
     let left = 0;
@@ -60,9 +58,11 @@ function binary(num, target){
     return null;
 }
 
-let num = [0, 2, 5, 8, 23, 45, 76];
+// let num = [23, 8, 76, 45, 2, 0, 5];
 let target = 23;
+let num = divideArray([23, 8, 76, 45, 2, 0, 5]);
 console.log(binary(num, target));
+
 
 // Question 3
 // Given years between 2000 and 2023, console all the leap years in the following
