@@ -69,7 +69,7 @@ console.log(binary(num, target));
 // sentence, i.e “2020 is a leap year” if not console log i.e “2001 is not a leap year”
 function isLeapYear(){
     for(let year = 2000; year <= 2023; year++){
-        if ((year % 4 === 0 && year % 100 !== 0)|| year % 400 === 0){
+        if (year % 4 === 0){
             console.log(year + " is a leap year");
         }
         else{
